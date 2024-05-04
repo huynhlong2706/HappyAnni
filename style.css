@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Edu+SA+Beginner:wght@500&family=Pacifico&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cherry+Bomb+One&family=Edu+SA+Beginner:wght@500&family=Pacifico&family=Poppins&display=swap');
+@font-face {
+    font-family: 'Pacifico';
+    src: url(./font/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cherry';
+    src: url(./font/CherryBombOne-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./image/background-love.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins';
+}
+
+.container {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    width: 420px;
+    padding: 30px 40px;
+    border-radius: 40px;
+    border: 4px solid rgb(255, 255, 255, 0.2);
+    /* backdrop-filter: blur(10px); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .heading {
+    font-size: 36px;
+}
+
+.container .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    /* background-color: brown; */
+    position: relative;
+}
+
+.input-box input {
+    color: white;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box ::placeholder {
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.container .forgot-rem {
+    font-size: 14.5px;
+    display: flex;
+    justify-content: right;
+    margin: -15px 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.login-btn button {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.login-btn button:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+.forgot-rem:hover {
+    cursor: pointer;
+    color: #333;
+}
+
+.progress-6 {
+  width:220px;
+  height:22px;
+  border-radius: 20px;
+  color:#514b82;
+  border:2px solid;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2); /* Màu trắng có độ trong suốt 50% */
+
+  display: none;
+}
+.progress-6::before {
+  content:"";
+  position: absolute;
+  margin:2px;
+  inset:0 100% 0 0;
+  border-radius: inherit;
+  background:currentColor;
+  animation:p6 2s infinite;
+}
+@keyframes p6 {
+    100% {inset:0}
+}
